@@ -242,15 +242,15 @@ body {
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: #E89F71;
+    background-color: rgba(232, 159, 113, 0.05) !important;
+    border: 1px solid #E89F71 !important;
     border-radius: 47px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: #E89F71;
     opacity: 0.8;
 }
 
@@ -541,6 +541,7 @@ body {
     line-height: 160%;
     color: #FFFFFF;
     text-align: left;
+    margin-top: 5px;
 }
 
 .footer-title {
@@ -621,7 +622,155 @@ body {
     transform: rotate(-180deg);
 }
 
+.home-title {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.collection-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    border: none;
+}
+
+.collection-card:hover {
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.collection-paragraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #111111;
+}
+
+.collection-body {
+    text-align: center;
+}
+
+.common-space {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.shop-card {
+    border: none !important;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1)) !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    padding: 0px !important;
+}
+
+.shop-tab-paragraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #111111;
+}
+
+.category-card {
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+    border-radius: 8px;
+}
+
+.category-paragraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #111111;
+}
+
+.category-body {
+    text-align: center;
+    padding: 0.2rem 0.5rem;
+}
+
+.category-space {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.factory-card {
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+    border-radius: 8px;
+}
+
+.factory-paragraph-primary {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #D01212;
+}
+
+.factory-paragraph-secondary {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #ACB2B6;
+}
+
+
+.factory-paragraph-tertiary {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    color: #D01212;
+}
+
+.factory-body {
+    text-align: center;
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-pills .nav-link {
+    background: #FFFFFF !important;
+    border: 1px solid #ACB2B6 !important;
+    border-radius: 32px !important;
+}
+
+.nav {
+    gap: 10px;
+}
+
+.style-space {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 @media screen and (max-width:768px) {
+
+    .home-title {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        color: #000000;
+    }
 
     .header {
         font-family: 'Merriweather';
@@ -689,18 +838,17 @@ body {
 
     .nav-pills .nav-link.active,
     .nav-pills .show>.nav-link {
-        color: #fff;
-        background-color: #E89F71;
+        background-color: rgba(232, 159, 113, 0.05) !important;
+        border: 1px solid #E89F71 !important;
         border-radius: 47px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
-        color: #FFFFFF;
+        color: #E89F71;
         opacity: 0.8;
     }
-
 
     .sup-title {
         font-family: 'Inter';

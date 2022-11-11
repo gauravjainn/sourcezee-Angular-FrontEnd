@@ -4,6 +4,15 @@ body {
     font-family: 'Merriweather';
 }
 
+.mendotry {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    color: #111111;
+    margin-bottom: 20px;
+}
 
 .success-img {
     width: 190.15px;
