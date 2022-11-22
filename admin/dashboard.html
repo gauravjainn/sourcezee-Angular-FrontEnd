@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/admin/dashboard.css" />
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light py-2">
+        <div class="container-fluid">
+            <div class="d-xs-none d-sm-block d-md-block d-lg-block">
+                <a class="navbar-brand" href="#"><img src="../images/admin/dashboard/logo.png" /></a>
+            </div>
+
+            <div class="profile d-xs-none d-sm-none d-md-block d-lg-block">
+                <div class="input-group mb-3">
+                    <span class="input-group-text top-nav" id="basic-addon1"> <img
+                            src="../images/admin/dashboard/profile.png" class="profile-img"></span>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Welcome Admin</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <div class="d-xs-block d-sm-block d-md-block d-lg-block">
+                        <a class="navbar-brand" href="#"><img src="../images/admin/dashboard/logo.png" /></a>
+                    </div>
+                    <button type="button" class="btn-close btn-close-grey" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex gap-2">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <ul class="list-group">
+                    <li class="list-group-item first-li">
+                        <span class="input-group-text side-nav" id="basic-addon1"> <img
+                                src="../images/admin/dashboard/dash.png" class="li-icons"></span>
+                        Dashboard
+                    </li>
+                    <li class="list-group-item remaining-li">
+                        <span class="input-group-text side-nav" id="basic-addon1"> <img
+                                src="../images/admin/dashboard/sm-profile.png" class="li-icons"></span>
+                        Users
+                    </li>
+                    <li class="list-group-item remaining-li">
+                        <span class="input-group-text side-nav" id="basic-addon1"> <img
+                                src="../images/admin/dashboard/square-sm.png" class="li-icons"></span>
+                        Manage Product
+                    </li>
+                    <li class="list-group-item remaining-li">
+                        <span class="input-group-text side-nav" id="basic-addon1"> <img
+                                src="../images/admin/dashboard/cloud.png" class="li-icons"></span>
+                        Upload Catalogs
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-12">
+                            <div class="card sub-card-1">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-12">
+                            <div class="card sub-card-2">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-12">
+                            <div class="card sub-card-3">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-12">
+                            <div class="card sub-card-4">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-12">
+                            <div class="card sub-card-5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-map">
+                        <div class="map-div">
+                            <img src="../images/admin/dashboard/map.png" class="map-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

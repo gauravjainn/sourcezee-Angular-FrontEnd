@@ -1,0 +1,150 @@
+.navbar {
+    background: #FFFFFF;
+}
+
+.profile {
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    box-sizing: border-box;
+    width: 45.46px;
+    height: 45.46px;
+    border: 1.26265px solid #DA7C7C;
+    border-radius: 216.254px;
+}
+
+.profile-head {
+    width: 110px;
+    height: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #414146;
+}
+
+.form-select {
+    background-color: #F6F5F3;
+    border: none;
+}
+
+.top-nav {
+    background-color: #F6F5F3;
+    border: none;
+}
+
+.side-nav {
+    border: none;
+    background: transparent;
+}
+
+
+.first-li {
+    border: none;
+    text-align: center;
+    background: #F6F5F3;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #E89F71;
+}
+
+.remaining-li {
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background: #F6F5F3;
+    border-radius: 8px;
+}
+
+.col-lg-2 {
+    margin-right: 32px;
+    margin-top: 27px;
+}
+
+.sub-card-1 {
+    width: 168px;
+    height: 154px;
+    background: #F4D2AC;
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: none;
+}
+
+.sub-card-2 {
+    width: 168px;
+    height: 154px;
+    background: #F3B8B4;
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: none;
+}
+
+.sub-card-3 {
+    width: 168px;
+    height: 154px;
+    background: #CFCCD7;
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: none;
+}
+
+.sub-card-4 {
+    width: 168px;
+    height: 154px;
+    background: #7EC8CB;
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: none;
+}
+
+.sub-card-5 {
+    width: 168px;
+    height: 154px;
+    background: #CAE9E1;
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: none;
+}
+
+.card-map {
+    background: #FEFAF8;
+    border-radius: 16px;
+    border: none;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.map-div {
+    text-align: center;
+}
+
+.map-img {
+    height: 400px;
+    width: 637px;
+}
