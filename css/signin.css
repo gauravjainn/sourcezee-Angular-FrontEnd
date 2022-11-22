@@ -8,12 +8,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
 .image-size {
-    height: 100vh;
+    height: 100%;
 }
 
 .card {
@@ -216,7 +216,10 @@ body {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
+.responsive-card-1 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
 @media screen and (max-width:992px) {
     .responsive-card {
         display: block !important;
