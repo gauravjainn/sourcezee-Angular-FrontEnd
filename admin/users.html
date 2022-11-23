@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/admin/users.css" />
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Users</title>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light py-2">
+        <div class="container-fluid">
+            <div class="d-xs-none d-sm-block d-md-block d-lg-block">
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <img src="../images/admin/dashboard/logo.png" />
+                    </div>
+                </a>
+            </div>
+            <div class="profile d-xs-none d-sm-none d-md-block d-lg-block">
+                <div class="input-group mb-3">
+                    <span class="input-group-text top-nav" id="basic-addon1"> <img
+                            src="../images/admin/dashboard/profile.png" class="profile-img"></span>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Welcome Admin</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <div class="d-xs-block d-sm-block d-md-block d-lg-block">
+                        <a class="navbar-brand" href="#"><img src="../images/admin/dashboard/logo.png" /></a>
+                    </div>
+                    <button type="button" class="btn-close btn-close-grey" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex gap-2">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="dashboard.html">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" class="svg"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.03566 14.9499H12.3121C12.7958 14.9499 13.1915 14.5541 13.1915 14.0705V7.03517C13.1915 6.5515 12.7958 6.15576 12.3121 6.15576H7.03566C6.55199 6.15576 6.15625 6.5515 6.15625 7.03517V14.0705C6.15625 14.5541 6.55199 14.9499 7.03566 14.9499ZM7.03566 21.9852H12.3121C12.7958 21.9852 13.1915 21.5894 13.1915 21.1058V17.5881C13.1915 17.1044 12.7958 16.7087 12.3121 16.7087H7.03566C6.55199 16.7087 6.15625 17.1044 6.15625 17.5881V21.1058C6.15625 21.5894 6.55199 21.9852 7.03566 21.9852ZM15.8298 21.9852H21.1062C21.5899 21.9852 21.9857 21.5894 21.9857 21.1058V14.0705C21.9857 13.5868 21.5899 13.1911 21.1062 13.1911H15.8298C15.3461 13.1911 14.9504 13.5868 14.9504 14.0705V21.1058C14.9504 21.5894 15.3461 21.9852 15.8298 21.9852ZM14.9504 7.03517V10.5528C14.9504 11.0365 15.3461 11.4322 15.8298 11.4322H21.1062C21.5899 11.4322 21.9857 11.0365 21.9857 10.5528V7.03517C21.9857 6.5515 21.5899 6.15576 21.1062 6.15576H15.8298C15.3461 6.15576 14.9504 6.5515 14.9504 7.03517Z" />
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="users.html">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" class="svg"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 6C13.0111 6 12.0444 6.29325 11.2222 6.84265C10.3999 7.39206 9.75904 8.17295 9.3806 9.08658C9.00217 10.0002 8.90315 11.0055 9.09608 11.9755C9.289 12.9454 9.76521 13.8363 10.4645 14.5355C11.1637 15.2348 12.0546 15.711 13.0246 15.9039C13.9945 16.0969 14.9998 15.9978 15.9134 15.6194C16.8271 15.241 17.6079 14.6001 18.1574 13.7779C18.7068 12.9556 19 11.9889 19 11C19 9.67392 18.4732 8.40215 17.5355 7.46447C16.5979 6.52678 15.3261 6 14 6ZM14 14C13.4067 14 12.8266 13.8241 12.3333 13.4944C11.8399 13.1648 11.4554 12.6962 11.2284 12.1481C11.0013 11.5999 10.9419 10.9967 11.0576 10.4147C11.1734 9.83279 11.4591 9.29824 11.8787 8.87868C12.2982 8.45912 12.8328 8.1734 13.4147 8.05764C13.9967 7.94189 14.5999 8.0013 15.1481 8.22836C15.6962 8.45542 16.1648 8.83994 16.4944 9.33329C16.8241 9.82664 17 10.4067 17 11C16.9992 11.7954 16.6829 12.558 16.1204 13.1204C15.558 13.6829 14.7954 13.9992 14 14Z" />
+                                <path
+                                    d="M14 0C11.2311 0 8.52431 0.821086 6.22202 2.35943C3.91973 3.89777 2.12532 6.08427 1.06569 8.64243C0.00606596 11.2006 -0.271181 14.0155 0.269012 16.7313C0.809205 19.447 2.14258 21.9416 4.10051 23.8995C6.05845 25.8574 8.55301 27.1908 11.2687 27.731C13.9845 28.2712 16.7994 27.9939 19.3576 26.9343C21.9157 25.8747 24.1022 24.0803 25.6406 21.778C27.1789 19.4757 28 16.7689 28 14C27.9958 10.2883 26.5194 6.72977 23.8948 4.10518C21.2702 1.48059 17.7117 0.00423472 14 0ZM8.00001 24.377V23C8.0008 22.2046 8.31713 21.442 8.87956 20.8796C9.442 20.3171 10.2046 20.0008 11 20H17C17.7954 20.0008 18.558 20.3171 19.1204 20.8796C19.6829 21.442 19.9992 22.2046 20 23V24.377C18.1792 25.4402 16.1085 26.0005 14 26.0005C11.8915 26.0005 9.82084 25.4402 8.00001 24.377ZM21.992 22.926C21.9721 21.6143 21.4377 20.363 20.5039 19.4416C19.5702 18.5202 18.3118 18.0025 17 18H11C9.68819 18.0025 8.42984 18.5202 7.4961 19.4416C6.56235 20.363 6.02794 21.6143 6.00801 22.926C4.19457 21.3067 2.91574 19.1749 2.34084 16.8127C1.76594 14.4505 1.92211 11.9693 2.78864 9.69786C3.65518 7.42637 5.19123 5.47167 7.19338 4.09257C9.19553 2.71347 11.5693 1.97503 14.0005 1.97503C16.4317 1.97503 18.8055 2.71347 20.8076 4.09257C22.8098 5.47167 24.3458 7.42637 25.2124 9.69786C26.0789 11.9693 26.2351 14.4505 25.6602 16.8127C25.0853 19.1749 23.8064 21.3067 21.993 22.926H21.992Z" />
+                            </svg>
+                            Users
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="products.html">
+                            <svg width="28" height="32" viewBox="0 0 28 32" fill="none" class="svg"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 0L-1.90735e-06 7.11491V24.9022L14 32L28 24.9022V7.11491L14 0ZM3.48317 7.79904L14 2.46285L18.0553 4.51523L7.60577 9.88562L3.48317 7.79904ZM14 13.1352L9.99519 11.1171L20.4615 5.74666L24.5168 7.79904L14 13.1352ZM25.8462 9.57777V23.5339L15.0769 29.007V15.0508L25.8462 9.57777ZM12.9231 29.007L2.15384 23.5339V9.57777L12.9231 15.0508V29.007Z" />
+                            </svg>
+                            Manage Product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="svg"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.8 13.3868C25.3521 11.1171 24.1301 9.07331 22.3428 7.60449C20.5554 6.13567 18.3135 5.33297 16 5.3335C12.1467 5.3335 8.8 7.52016 7.13333 10.7202C5.17365 10.9319 3.36134 11.8604 2.04465 13.3273C0.727961 14.7941 -0.000228936 16.6957 5.39903e-08 18.6668C5.39903e-08 23.0802 3.58667 26.6668 8 26.6668H25.3333C29.0133 26.6668 32 23.6802 32 20.0002C32 16.4802 29.2667 13.6268 25.8 13.3868ZM25.3333 24.0002H8C5.05333 24.0002 2.66667 21.6135 2.66667 18.6668C2.66667 15.9335 4.70667 13.6535 7.41333 13.3735L8.84 13.2268L9.50667 11.9602C10.1198 10.7665 11.0505 9.76525 12.1962 9.06656C13.3418 8.36786 14.6581 7.99885 16 8.00016C19.4933 8.00016 22.5067 10.4802 23.1867 13.9068L23.5867 15.9068L25.6267 16.0535C26.629 16.1209 27.5686 16.5655 28.2563 17.2977C28.944 18.03 29.3289 18.9956 29.3333 20.0002C29.3333 22.2002 27.5333 24.0002 25.3333 24.0002ZM10.6667 17.3335H14.0667V21.3335H17.9333V17.3335H21.3333L16 12.0002L10.6667 17.3335Z" />
+                            </svg>
+                            Upload Catalogs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <div class="container top-cont">
+                    <div class="container-fluid top-container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h5>User (50)</h5>
+                            </div>
+                            <div class="col-lg-4">
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text search-field" id="basic-addon1"> <img
+                                                src="../images/admin/dashboard/search.png" class="search-img"></span>
+                                        <input type="search" class="form-control" placeholder="Search"
+                                            aria-label="Search" aria-describedby="basic-addon1">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-div">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr style="background: #F0F1F2;
+                                text-align: center;
+                                border: 1px solid #F0F1F2;
+                                border-radius: 16px 16px 0px 0px;">
+                                        <th scope="col">S/N</th>
+                                        <th scope="col">Company Name</th>
+                                        <th scope="col">Contact Name</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Fax</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Country</th>
+                                        <th scope="col">City</th>
+                                        <th scope="col">State</th>
+                                        <th scope="col">Zip</th>
+                                        <th scope="col">Tax ID / EIN</th>
+                                        <th scope="col">Website</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Code Town Technologies</td>
+                                        <td>Gaurav Jain</td>
+                                        <td>7549604525</td>
+                                        <td>7549604525</td>
+                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                        <td>India</td>
+                                        <td>Jaipur</td>
+                                        <td>Rajasthan </td>
+                                        <td>302015</td>
+                                        <td>302015</td>
+                                        <td>www.codetown.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Approve</button>
+                                            <button type="button" class="btn btn-outline-danger">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Code Town Technologies</td>
+                                        <td>Gaurav Jain</td>
+                                        <td>7549604525</td>
+                                        <td>7549604525</td>
+                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                        <td>India</td>
+                                        <td>Jaipur</td>
+                                        <td>Rajasthan </td>
+                                        <td>302015</td>
+                                        <td>302015</td>
+                                        <td>www.codetown.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Approve</button>
+                                            <button type="button" class="btn btn-outline-danger">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Code Town Technologies</td>
+                                        <td>Gaurav Jain</td>
+                                        <td>7549604525</td>
+                                        <td>7549604525</td>
+                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                        <td>India</td>
+                                        <td>Jaipur</td>
+                                        <td>Rajasthan </td>
+                                        <td>302015</td>
+                                        <td>302015</td>
+                                        <td>www.codetown.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Approve</button>
+                                            <button type="button" class="btn btn-outline-danger">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Code Town Technologies</td>
+                                        <td>Gaurav Jain</td>
+                                        <td>7549604525</td>
+                                        <td>7549604525</td>
+                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                        <td>India</td>
+                                        <td>Jaipur</td>
+                                        <td>Rajasthan </td>
+                                        <td>302015</td>
+                                        <td>302015</td>
+                                        <td>www.codetown.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Approve</button>
+                                            <button type="button" class="btn btn-outline-danger">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Code Town Technologies</td>
+                                        <td>Gaurav Jain</td>
+                                        <td>7549604525</td>
+                                        <td>7549604525</td>
+                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                        <td>India</td>
+                                        <td>Jaipur</td>
+                                        <td>Rajasthan </td>
+                                        <td>302015</td>
+                                        <td>302015</td>
+                                        <td>www.codetown.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Approve</button>
+                                            <button type="button" class="btn btn-outline-danger">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Code Town Technologies</td>
+                                        <td>Gaurav Jain</td>
+                                        <td>7549604525</td>
+                                        <td>7549604525</td>
+                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                        <td>India</td>
+                                        <td>Jaipur</td>
+                                        <td>Rajasthan </td>
+                                        <td>302015</td>
+                                        <td>302015</td>
+                                        <td>www.codetown.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Approve</button>
+                                            <button type="button" class="btn btn-outline-danger">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Code Town Technologies</td>
+                                        <td>Gaurav Jain</td>
+                                        <td>7549604525</td>
+                                        <td>7549604525</td>
+                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                        <td>India</td>
+                                        <td>Jaipur</td>
+                                        <td>Rajasthan </td>
+                                        <td>302015</td>
+                                        <td>302015</td>
+                                        <td>www.codetown.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Approve</button>
+                                            <button type="button" class="btn btn-outline-danger">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Code Town Technologies</td>
+                                        <td>Gaurav Jain</td>
+                                        <td>7549604525</td>
+                                        <td>7549604525</td>
+                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                        <td>India</td>
+                                        <td>Jaipur</td>
+                                        <td>Rajasthan </td>
+                                        <td>302015</td>
+                                        <td>302015</td>
+                                        <td>www.codetown.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Approve</button>
+                                            <button type="button" class="btn btn-outline-danger">Reject</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="container end-cont">
+                            <div class="row">
+                                <div class="col-lg-8 show-page">
+                                    <h6>Showing 1- 12 out of 40</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <nav aria-label="...">
+                                        <ul class="pagination justify-content-end">
+                                            <li class="page-item pre">
+                                                <span class="page-link">Pre</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item" aria-current="page">
+                                                <span class="page-link active-link">2</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item nxt">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

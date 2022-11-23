@@ -54,9 +54,6 @@ body {
     height: 100%;
     background: #FFFFFF;
     border-radius: 50px 0px 0px 50px;
-
-    /* White */
-
     background: #FFFFFF;
     border-radius: 50px 0px 0px 50px;
 }
@@ -70,14 +67,12 @@ body {
 .title {
     width: 84px;
     height: 36px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
     line-height: 36px;
     text-indent: 3px;
-
     color: #000000;
 }
 
@@ -86,32 +81,24 @@ body {
     height: 19px;
     left: 1209px;
     top: 348px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-indent: 3px;
-
-    /* Black */
-
     color: #131416;
 }
 
 .password {
     width: 78px;
     height: 19px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-indent: 3px;
-
-    /* Black */
-
     color: #131416;
 }
 
@@ -125,9 +112,6 @@ body {
     line-height: 18px;
     text-align: right;
     text-indent: 3px;
-
-    /* Black */
-
     color: #131416;
 }
 
@@ -141,12 +125,7 @@ body {
     font-size: 15px;
     line-height: 18px;
     text-indent: 3px;
-
-    /* gary3 */
-
     background: #F0F1F2;
-    /* gary3 */
-
     border: 1px solid #F0F1F2;
 
 }
@@ -176,9 +155,6 @@ body {
     line-height: 22px;
     color: #FFFFFF;
     text-indent: 3px;
-
-    /* Brand */
-
     background: #E89F71;
     border-radius: 8px;
     border: none;
@@ -191,17 +167,11 @@ body {
 .inner-text {
     width: 63px;
     height: 22px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
-
     text-indent: 3px;
-
-    /* White */
-
     color: #FFFFFF;
 }

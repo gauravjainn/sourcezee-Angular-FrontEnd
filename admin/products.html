@@ -16,11 +16,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/admin/dashboard.css" />
+    <link rel="stylesheet" href="../css/admin/products.css" />
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <title>Dashboard</title>
+    <title>Manage Product</title>
 </head>
 
 <body>
@@ -34,8 +34,6 @@
                     </div>
                 </a>
             </div>
-
-
             <div class="profile d-xs-none d-sm-none d-md-block d-lg-block">
                 <div class="input-group mb-3">
                     <span class="input-group-text top-nav" id="basic-addon1"> <img
@@ -121,66 +119,147 @@
             </div>
 
             <div class="col-lg-9 col-md-8 col-sm-12">
-                <div class="container">
-                    <div class="row row-cols-5">
-                        <div class="col">
-                            <div class="card sub-card-1">
-                                <div class="card-body square-icons">
-                                    <div class="img-div">
-                                        <img src="../images/admin/dashboard/profile-2.png" class="square-img">
-                                    </div>
-                                    <h5 class="para">450</h5>
-                                    <p class="h6">Registered Users</p>
-                                </div>
+                <div class="container top-cont">
+                    <div class="container-fluid top-container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h5>Manage Product</h5>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card sub-card-2">
-                                <div class="card-body square-icons">
-                                    <div class="img-div">
-                                        <img src="../images/admin/dashboard/watch.png" class="square-img">
+                            <div class="col-lg-4">
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text search-field" id="basic-addon1"> <img
+                                                src="../images/admin/dashboard/search.png" class="search-img"></span>
+                                        <input type="search" class="form-control" placeholder="Search"
+                                            aria-label="Search" aria-describedby="basic-addon1">
                                     </div>
-                                    <h5 class="para">24</h5>
-                                    <p class="h6">Pending Approvals</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card sub-card-3">
-                                <div class="card-body square-icons">
-                                    <div class="img-div">
-                                        <img src="../images/admin/dashboard/square.png" class="square-img">
-                                    </div>
-                                    <h5 class="para">68</h5>
-                                    <p class="h6">Products</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card sub-card-4">
-                                <div class="card-body square-icons">
-                                    <div class="img-div">
-                                        <img src="../images/admin/dashboard/cols.png" class="square-img">
-                                    </div>
-                                    <h5 class="para">74</h5>
-                                    <p class="h6">Categories</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card sub-card-5">
-                                <div class="card-body square-icons">
-                                    <div class="img-div">
-                                        <img src="../images/admin/dashboard/invert.png" class="square-img">
-                                    </div>
-                                    <h5 class="para">250</h5>
-                                    <p class="h6">Quotes</p>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-map">
-                        <img src="../images/admin/dashboard/group-map.png" height="100%" width="100%" class="map-img">
+                    <div class="main-div">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr style="background: #F0F1F2;
+                                text-align: center;
+                                border: 1px solid #F0F1F2;
+                                border-radius: 16px 16px 0px 0px;">
+                                        <th scope="col">S/N</th>
+                                        <th scope="col">Category Name</th>
+                                        <th scope="col">Subcategory Name</th>
+                                        <th scope="col">Product Name</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Home Decor </td>
+                                        <td>Home Decor </td>
+                                        <td>Sideboards & Buffets</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Home Decor </td>
+                                        <td>Home Decor </td>
+                                        <td>Sideboards & Buffets</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Home Decor </td>
+                                        <td>Home Decor </td>
+                                        <td>Sideboards & Buffets</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Home Decor </td>
+                                        <td>Home Decor </td>
+                                        <td>Sideboards & Buffets</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Home Decor </td>
+                                        <td>Home Decor </td>
+                                        <td>Sideboards & Buffets</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Home Decor </td>
+                                        <td>Home Decor </td>
+                                        <td>Sideboards & Buffets</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Home Decor </td>
+                                        <td>Home Decor </td>
+                                        <td>Sideboards & Buffets</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th scope="row">1</th>
+                                        <td>Home Decor </td>
+                                        <td>Home Decor </td>
+                                        <td>Sideboards & Buffets</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="container end-cont">
+                            <div class="row">
+                                <div class="col-lg-8 show-page">
+                                    <h6>Showing 1- 12 out of 40</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <nav aria-label="...">
+                                        <ul class="pagination justify-content-end">
+                                            <li class="page-item pre">
+                                                <span class="page-link">Pre</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item" aria-current="page">
+                                                <span class="page-link active-link">2</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item nxt">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
