@@ -27,14 +27,14 @@
     <!-- Navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light py-2">
         <div class="container-fluid">
-            <div class="d-xs-none d-sm-block d-md-block d-lg-block">
+            <div class="d-sm-block d-md-block d-lg-block">
                 <a class="navbar-brand" href="#">
                     <div class="logo">
                         <img src="../images/admin/dashboard/logo.png" />
                     </div>
                 </a>
             </div>
-            <div class="profile d-xs-none d-sm-none d-md-block d-lg-block">
+            <div class="profile d-sm-none d-md-block d-lg-block">
                 <div class="input-group mb-3">
                     <span class="input-group-text top-nav" id="basic-addon1"> <img
                             src="../images/admin/dashboard/profile.png" class="profile-img"></span>
@@ -42,6 +42,9 @@
                         <option selected>Welcome Admin</option>
                     </select>
                 </div>
+            </div>
+            <div class="only-profile d-lg-none">
+                <img src="../images/admin/dashboard/profile.png" class="profile-img">
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -71,10 +74,10 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="col-lg-2 col-md-12 col-sm-12">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="dashboard.html">
+                        <a class="nav-link" aria-current="page" href="dashboard.html">
                             <svg width="29" height="29" viewBox="0 0 29 29" fill="none" class="svg"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -96,7 +99,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="products.html">
+                        <a class="nav-link" aria-current="page" href="products.html">
                             <svg width="28" height="32" viewBox="0 0 28 32" fill="none" class="svg"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -106,7 +109,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link" aria-current="page" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="svg"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -118,8 +121,8 @@
                 </ul>
             </div>
 
-            <div class="col-lg-9 col-md-8 col-sm-12">
-                <div class="container top-cont">
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="top-cont">
                     <div class="container-fluid top-container">
                         <div class="row">
                             <div class="col-lg-8">
@@ -137,198 +140,200 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main-div">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr style="background: #F0F1F2;
-                                text-align: center;
+                    <div class="container-fluid">
+                        <div class="main-div">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr style="background: #F0F1F2;
                                 border: 1px solid #F0F1F2;
                                 border-radius: 16px 16px 0px 0px;">
-                                        <th scope="col">S/N</th>
-                                        <th scope="col">Company Name</th>
-                                        <th scope="col">Contact Name</th>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">Fax</th>
-                                        <th scope="col">Address</th>
-                                        <th scope="col">Country</th>
-                                        <th scope="col">City</th>
-                                        <th scope="col">State</th>
-                                        <th scope="col">Zip</th>
-                                        <th scope="col">Tax ID / EIN</th>
-                                        <th scope="col">Website</th>
-                                        <th scope="col">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="table-row">
-                                        <th scope="row">1</th>
-                                        <td>Code Town Technologies</td>
-                                        <td>Gaurav Jain</td>
-                                        <td>7549604525</td>
-                                        <td>7549604525</td>
-                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
-                                        <td>India</td>
-                                        <td>Jaipur</td>
-                                        <td>Rajasthan </td>
-                                        <td>302015</td>
-                                        <td>302015</td>
-                                        <td>www.codetown.com</td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-success">Approve</button>
-                                            <button type="button" class="btn btn-outline-danger">Reject</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <th scope="row">1</th>
-                                        <td>Code Town Technologies</td>
-                                        <td>Gaurav Jain</td>
-                                        <td>7549604525</td>
-                                        <td>7549604525</td>
-                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
-                                        <td>India</td>
-                                        <td>Jaipur</td>
-                                        <td>Rajasthan </td>
-                                        <td>302015</td>
-                                        <td>302015</td>
-                                        <td>www.codetown.com</td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-success">Approve</button>
-                                            <button type="button" class="btn btn-outline-danger">Reject</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <th scope="row">1</th>
-                                        <td>Code Town Technologies</td>
-                                        <td>Gaurav Jain</td>
-                                        <td>7549604525</td>
-                                        <td>7549604525</td>
-                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
-                                        <td>India</td>
-                                        <td>Jaipur</td>
-                                        <td>Rajasthan </td>
-                                        <td>302015</td>
-                                        <td>302015</td>
-                                        <td>www.codetown.com</td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-success">Approve</button>
-                                            <button type="button" class="btn btn-outline-danger">Reject</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <th scope="row">1</th>
-                                        <td>Code Town Technologies</td>
-                                        <td>Gaurav Jain</td>
-                                        <td>7549604525</td>
-                                        <td>7549604525</td>
-                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
-                                        <td>India</td>
-                                        <td>Jaipur</td>
-                                        <td>Rajasthan </td>
-                                        <td>302015</td>
-                                        <td>302015</td>
-                                        <td>www.codetown.com</td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-success">Approve</button>
-                                            <button type="button" class="btn btn-outline-danger">Reject</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <th scope="row">1</th>
-                                        <td>Code Town Technologies</td>
-                                        <td>Gaurav Jain</td>
-                                        <td>7549604525</td>
-                                        <td>7549604525</td>
-                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
-                                        <td>India</td>
-                                        <td>Jaipur</td>
-                                        <td>Rajasthan </td>
-                                        <td>302015</td>
-                                        <td>302015</td>
-                                        <td>www.codetown.com</td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-success">Approve</button>
-                                            <button type="button" class="btn btn-outline-danger">Reject</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <th scope="row">1</th>
-                                        <td>Code Town Technologies</td>
-                                        <td>Gaurav Jain</td>
-                                        <td>7549604525</td>
-                                        <td>7549604525</td>
-                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
-                                        <td>India</td>
-                                        <td>Jaipur</td>
-                                        <td>Rajasthan </td>
-                                        <td>302015</td>
-                                        <td>302015</td>
-                                        <td>www.codetown.com</td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-success">Approve</button>
-                                            <button type="button" class="btn btn-outline-danger">Reject</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <th scope="row">1</th>
-                                        <td>Code Town Technologies</td>
-                                        <td>Gaurav Jain</td>
-                                        <td>7549604525</td>
-                                        <td>7549604525</td>
-                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
-                                        <td>India</td>
-                                        <td>Jaipur</td>
-                                        <td>Rajasthan </td>
-                                        <td>302015</td>
-                                        <td>302015</td>
-                                        <td>www.codetown.com</td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-success">Approve</button>
-                                            <button type="button" class="btn btn-outline-danger">Reject</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-row">
-                                        <th scope="row">1</th>
-                                        <td>Code Town Technologies</td>
-                                        <td>Gaurav Jain</td>
-                                        <td>7549604525</td>
-                                        <td>7549604525</td>
-                                        <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
-                                        <td>India</td>
-                                        <td>Jaipur</td>
-                                        <td>Rajasthan </td>
-                                        <td>302015</td>
-                                        <td>302015</td>
-                                        <td>www.codetown.com</td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-success">Approve</button>
-                                            <button type="button" class="btn btn-outline-danger">Reject</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="container end-cont">
-                            <div class="row">
-                                <div class="col-lg-8 show-page">
-                                    <h6>Showing 1- 12 out of 40</h6>
-                                </div>
-                                <div class="col-lg-4">
-                                    <nav aria-label="...">
-                                        <ul class="pagination justify-content-end">
-                                            <li class="page-item pre">
-                                                <span class="page-link">Pre</span>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item" aria-current="page">
-                                                <span class="page-link active-link">2</span>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item nxt">
-                                                <a class="page-link" href="#">Next</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
+                                            <th scope="col">S/N</th>
+                                            <th scope="col">Company Name</th>
+                                            <th scope="col">Contact Name</th>
+                                            <th scope="col">Phone</th>
+                                            <th scope="col">Fax</th>
+                                            <th scope="col">Address</th>
+                                            <th scope="col">Country</th>
+                                            <th scope="col">City</th>
+                                            <th scope="col">State</th>
+                                            <th scope="col">Zip</th>
+                                            <th scope="col">Tax ID / EIN</th>
+                                            <th scope="col">Website</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-row">
+                                            <th scope="row" class="sm">1</th>
+                                            <td>Code Town Technologies</td>
+                                            <td>Gaurav Jain</td>
+                                            <td>7549604525</td>
+                                            <td>7549604525</td>
+                                            <td class="add-td">Basement of HDFC Bank, Nakoda Complex, Rajlaxmi
+                                                Building,.....</td>
+                                            <td>India</td>
+                                            <td>Jaipur</td>
+                                            <td>Rajasthan </td>
+                                            <td>302015</td>
+                                            <td>302015</td>
+                                            <td>www.codetown.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-success">Approve</button>
+                                                <button type="button" class="btn btn-outline-danger">Reject</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <th scope="row" class="sm">1</th>
+                                            <td>Code Town Technologies</td>
+                                            <td>Gaurav Jain</td>
+                                            <td>7549604525</td>
+                                            <td>7549604525</td>
+                                            <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                            <td>India</td>
+                                            <td>Jaipur</td>
+                                            <td>Rajasthan </td>
+                                            <td>302015</td>
+                                            <td>302015</td>
+                                            <td>www.codetown.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-success">Approve</button>
+                                                <button type="button" class="btn btn-outline-danger">Reject</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <th scope="row" class="sm">1</th>
+                                            <td>Code Town Technologies</td>
+                                            <td>Gaurav Jain</td>
+                                            <td>7549604525</td>
+                                            <td>7549604525</td>
+                                            <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                            <td>India</td>
+                                            <td>Jaipur</td>
+                                            <td>Rajasthan </td>
+                                            <td>302015</td>
+                                            <td>302015</td>
+                                            <td>www.codetown.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-success">Approve</button>
+                                                <button type="button" class="btn btn-outline-danger">Reject</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <th scope="row" class="sm">1</th>
+                                            <td>Code Town Technologies</td>
+                                            <td>Gaurav Jain</td>
+                                            <td>7549604525</td>
+                                            <td>7549604525</td>
+                                            <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                            <td>India</td>
+                                            <td>Jaipur</td>
+                                            <td>Rajasthan </td>
+                                            <td>302015</td>
+                                            <td>302015</td>
+                                            <td>www.codetown.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-success">Approve</button>
+                                                <button type="button" class="btn btn-outline-danger">Reject</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <th scope="row" class="sm">1</th>
+                                            <td>Code Town Technologies</td>
+                                            <td>Gaurav Jain</td>
+                                            <td>7549604525</td>
+                                            <td>7549604525</td>
+                                            <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                            <td>India</td>
+                                            <td>Jaipur</td>
+                                            <td>Rajasthan </td>
+                                            <td>302015</td>
+                                            <td>302015</td>
+                                            <td>www.codetown.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-success">Approve</button>
+                                                <button type="button" class="btn btn-outline-danger">Reject</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <th scope="row" class="sm">1</th>
+                                            <td>Code Town Technologies</td>
+                                            <td>Gaurav Jain</td>
+                                            <td>7549604525</td>
+                                            <td>7549604525</td>
+                                            <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                            <td>India</td>
+                                            <td>Jaipur</td>
+                                            <td>Rajasthan </td>
+                                            <td>302015</td>
+                                            <td>302015</td>
+                                            <td>www.codetown.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-success">Approve</button>
+                                                <button type="button" class="btn btn-outline-danger">Reject</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <th scope="row" class="sm">1</th>
+                                            <td>Code Town Technologies</td>
+                                            <td>Gaurav Jain</td>
+                                            <td>7549604525</td>
+                                            <td>7549604525</td>
+                                            <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                            <td>India</td>
+                                            <td>Jaipur</td>
+                                            <td>Rajasthan </td>
+                                            <td>302015</td>
+                                            <td>302015</td>
+                                            <td>www.codetown.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-success">Approve</button>
+                                                <button type="button" class="btn btn-outline-danger">Reject</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <th scope="row" class="sm">1</th>
+                                            <td>Code Town Technologies</td>
+                                            <td>Gaurav Jain</td>
+                                            <td>7549604525</td>
+                                            <td>7549604525</td>
+                                            <td>Basement of HDFC Bank, Nakoda Complex, Rajlaxmi Building,.....</td>
+                                            <td>India</td>
+                                            <td>Jaipur</td>
+                                            <td>Rajasthan </td>
+                                            <td>302015</td>
+                                            <td>302015</td>
+                                            <td>www.codetown.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-success">Approve</button>
+                                                <button type="button" class="btn btn-outline-danger">Reject</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="container end-cont">
+                                <div class="row">
+                                    <div class="col-lg-8 show-page">
+                                        <h6>Showing 1- 12 out of 40</h6>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <nav aria-label="...">
+                                            <ul class="pagination justify-content-end">
+                                                <li class="page-item pre">
+                                                    <span class="page-link">Pre</span>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item" aria-current="page">
+                                                    <span class="page-link active-link">2</span>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item nxt">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
                             </div>
                         </div>

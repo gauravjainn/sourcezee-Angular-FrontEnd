@@ -175,3 +175,67 @@ body {
     text-indent: 3px;
     color: #FFFFFF;
 }
+
+
+@media screen and (max-width:420px) {
+
+    .image-size {
+        height: 350px !important;
+        width: 350px !important;
+        text-align: center;
+        margin-top: 21px !important;
+        margin-bottom: 22px;
+    }
+
+    .second-img {
+        margin: auto;
+    }
+
+    .container {
+        margin-bottom: 30px !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .image-size {
+        height: 350px !important;
+        width: 350px !important;
+        text-align: center;
+        margin-top: 21px !important;
+        margin-bottom: 22px;
+    }
+
+    .second-card {
+        justify-content: normal;
+    }
+
+    .second-img {
+        margin: auto;
+    }
+
+    .container {
+        margin-bottom: 30px !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .image-size {
+        height: 350px !important;
+        width: 350px !important;
+        text-align: center;
+        margin-top: 21px !important;
+        margin-bottom: 22px;
+    }
+
+    .second-card {
+        justify-content: normal;
+    }
+
+    .second-img {
+        margin: auto;
+    }
+
+    .container {
+        margin-bottom: 30px !important;
+    }
+}

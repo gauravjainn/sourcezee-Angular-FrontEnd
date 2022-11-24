@@ -74,7 +74,6 @@
 }
 
 .nav-link {
-    width: 322px;
     height: 53px;
     font-family: 'Inter';
     font-style: normal;
@@ -111,6 +110,16 @@
     fill: #E89F71;
 }
 
+.active {
+    background: #F6F5F3;
+    border-radius: 8px;
+    color: #E89F71;
+}
+
+.active .svg {
+    fill: #E89F71;
+}
+
 .input-group {
     background: #FFFFFF;
     border: 1px solid #F0F1F2;
@@ -119,12 +128,13 @@
 
 .search-field {
     background: #FFFFFF;
-    border: 1px solid #F0F1F2;
+    border: 0px;
 }
 
 .form-control {
     background: #FFFFFF;
-    border: 1px solid #F0F1F2;
+    border: 1px;
+    border-left: 0px;
 }
 
 .table {
@@ -135,14 +145,35 @@
     background: #FFFFFF;
     border: 1px solid #F0F1F2;
     border-radius: 16px;
-    color: #858F94;
-    align-items: center;
+    color: #ACB2B6;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 21px;
+    vertical-align: middle;
+}
+
+.sm {
+    color: #858F94;
     text-align: center;
+}
+
+.add-td {
+    width: 200px;
+}
+
+thead {
+    border-style: hidden;
+}
+
+th {
+    color: #000000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
 }
 
 .table-data {
@@ -193,4 +224,78 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+}
+
+.btn-outline-success {
+    background: rgba(118, 183, 87, 0.2);
+    border: 1px solid #76B757;
+    border-radius: 4px;
+}
+
+.btn-outline-success:hover {
+    background: rgba(118, 183, 87, 0.2);
+    border: 1px solid #76B757;
+    border-radius: 4px;
+    color: #76B757;
+}
+
+.btn-outline-danger {
+    background: rgba(208, 18, 18, 0.1);
+    border: 1px solid #D01212;
+    border-radius: 4px;
+}
+
+.btn-outline-danger:hover {
+    background: rgba(208, 18, 18, 0.1);
+    border: 1px solid #D01212;
+    border-radius: 4px;
+    color: #D01212;
+}
+
+@media screen and (max-width:420px) {
+    .logo {
+        margin-left: 0px !important;
+    }
+
+    .profile {
+        display: none !important;
+    }
+
+    h6 {
+        font-size: 11px !important;
+        text-align: center;
+    }
+
+    .pagination {
+        justify-content: space-around !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo {
+        margin-left: 0px !important;
+    }
+
+    .profile {
+        display: none !important;
+    }
+
+    h6 {
+        font-size: 11px !important;
+        text-align: center;
+    }
+
+    .pagination {
+        justify-content: space-around !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .logo {
+        margin-left: 0px !important;
+    }
+
+    .profile {
+        display: none !important;
+    }
 }

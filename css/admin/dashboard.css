@@ -94,7 +94,6 @@
 }
 
 .sub-card-1 {
-    height: 189px;
     background: #F4D2AC;
     backdrop-filter: blur(20px);
     border-radius: 16px;
@@ -102,7 +101,6 @@
 }
 
 .sub-card-2 {
-    height: 189px;
     background: #F3B8B4;
     backdrop-filter: blur(20px);
     border-radius: 16px;
@@ -110,7 +108,6 @@
 }
 
 .sub-card-3 {
-    height: 189px;
     background: #CFCCD7;
     backdrop-filter: blur(20px);
     border-radius: 16px;
@@ -118,7 +115,6 @@
 }
 
 .sub-card-4 {
-    height: 189px;
     background: #7EC8CB;
     backdrop-filter: blur(20px);
     border-radius: 16px;
@@ -126,7 +122,6 @@
 }
 
 .sub-card-5 {
-    height: 189px;
     background: #CAE9E1;
     backdrop-filter: blur(20px);
     border-radius: 16px;
@@ -165,9 +160,12 @@
     text-align: center;
 }
 
+.content {
+    margin-top: 25px;
+}
+
 .para {
     width: 91px;
-    height: 45.79px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -181,19 +179,16 @@
 
 .h6 {
     width: 165px;
-    height: 26.45px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
-    line-height: 28px;
     display: flex;
     align-items: center;
     color: #111111;
 }
 
 .nav-link {
-    width: 322px;
     height: 53px;
     font-family: 'Inter';
     font-style: normal;
@@ -228,4 +223,54 @@
 
 .nav-link:hover .svg {
     fill: #E89F71;
+}
+
+.active {
+    background: #F6F5F3;
+    border-radius: 8px;
+    color: #E89F71;
+}
+
+.active .svg {
+    fill: #E89F71;
+}
+
+@media screen and (max-width:420px) {
+    .logo {
+        margin-left: 0px !important;
+    }
+
+    .profile {
+        display: none !important;
+    }
+
+    h6 {
+        font-size: 11px !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo {
+        margin-left: 0px !important;
+    }
+
+    .profile {
+        display: none !important;
+    }
+
+    h6 {
+        font-size: 11px !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .logo {
+        margin-left: 0px !important;
+    }
+
+    .profile {
+        display: none !important;
+    }
 }
