@@ -1,0 +1,72 @@
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+        <div class="container-fluid">
+            <div class="d-xs-block d-sm-block d-md-block d-lg-none">
+                <a class="navbar-brand" href="#"><img src="../../../../assets/images/homepage/brand.png" /></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="d-xs-none d-sm-none d-md-none d-lg-block">
+                    <a class="navbar-brand" href="#"><img src="../../../../assets/images/homepage/brand.png" /></a>
+                </div>
+                <ul class="navbar-nav mt-md-4 mt-lg-0 mb-2 mb-lg-0 gap-4">
+					<li class="nav-item">
+                        <a class="nav-link link-text" aria-current="page" routerLink="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" href="#">FAQ</a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-primary outline" routerLink="/register">Sign up</button>
+                    <button class="btn btn-primary" type="submit" routerLink="/login"><img src="../../../../assets/images/homepage/user.png" />
+                        <span class="btn-span">Login</span></button>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sourcezee</h5>
+                    <button type="button" class="btn-close btn-close-grey" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-xs-none d-sm-none d-md-none d-lg-block">
+                        <a class="navbar-brand" href="#"><img src="../../../../assets/images/homepage/brand.png" /></a>
+                    </div>
+                    <ul class="navbar-nav mt-md-4 mt-lg-0 mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-primary">Sign up</button>
+                        <button class="btn btn-primary"><img src="../../../../assets/images/homepage/user.png" />
+                            <span class="btn-span">Login</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    

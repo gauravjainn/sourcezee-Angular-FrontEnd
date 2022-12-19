@@ -1,0 +1,513 @@
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: 'Merriweather';
+}
+
+.mendotry {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.success-img {
+    width: 190.15px;
+    height: 175.69px;
+}
+
+.signin-alignment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.image-size {
+    height: 100%;
+}
+
+.card {
+    border: none !important;
+    border-radius: 0rem !important;
+}
+
+.border {
+    border: none !important;
+    border-radius: 0rem !important;
+}
+
+.header {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.paragraph {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.title {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+}
+
+.form-control {
+    border: 2px solid #E5E5E5;
+    border-radius: 104px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    height: 52px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #E89F71;
+}
+
+.form-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #ACB2B6;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: #E89F71;
+    border-radius: 104px;
+    border-color: #E89F71;
+    height: 52px !important;
+    font-family: 'Inter';
+}
+
+.btn-primary:active:focus {
+    background: #E89F71;
+    border-radius: 104px;
+    border-color: #E89F71;
+    height: 52px !important;
+    font-family: 'Inter';
+    box-shadow: none;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    background-color: #E89F71;
+    border-color: #E89F71;
+    box-shadow: none;
+}
+
+.btn-outline-dark {
+    border-radius: 104px;
+    height: 52px !important;
+    font-family: 'Inter';
+    color: #fff;
+    background-color: #212529;
+}
+
+.btn-primary:hover {
+    background: #E89F71;
+    border-radius: 104px;
+    border-color: #E89F71;
+}
+
+.link {
+    color: #000000;
+}
+
+.password-field {
+    position: relative;
+}
+
+.img-pass {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.form-text-1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    text-align: left;
+    text-transform: capitalize;
+    color: #ACB2B6;
+    letter-spacing: 0.5px;
+}
+
+/* custom checkbox */
+/* The container */
+.container-1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-1 .inputs {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+
+}
+
+/* On mouse-over, add a grey background color */
+.container-1:hover .inputs~.checkmark {
+    background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-1 .inputs:checked~.checkmark {
+    background-color: #fff;
+    background-image: url('../../../assets/images/signin/mark-vector.png') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #E5E5E5;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-1 .inputs:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-1 .checkmark:after {
+    left: 0px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* The container */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container .radio-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid #E89F71;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover .radio-input~.checkmark-1 {
+    background-color: transparent;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container .radio-input:checked~.checkmark-1 {
+    background-color: #fff;
+    background-image: url('../../../assets/images/signup/radio-dot.png') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-1:after {
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container .radio-input:checked~.checkmark-1:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark-1:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.modal-header {
+    border-bottom: 0px !important;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal-footer {
+    border-top: 0px !important;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal-body-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #112B3C;
+}
+
+.modal-content {
+    border-radius: 20px;
+}
+
+.alert-danger {
+	//color: #ff0017 !important;
+    background-color: #fff !important; 
+    border-color: #fff !important;
+    font-size: 15px !important;
+    color: #ff6f7c !important;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.alert-warning {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+    margin-top: 20px;
+	text-align: center !important;
+    padding: 10px !important;
+}
+.eyes-hide{
+    width: 80%;
+}
+@media screen and (max-width:992px) {
+    .responsive-card {
+        display: block !important;
+    }
+
+    .responsive-card-1 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .form-text-res {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .responsive-card {
+        display: block !important;
+    }
+
+    .responsive-card-1 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .header {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        width: 100%;
+        color: #FFFFFF;
+    }
+
+    .paragraph {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .title {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .banner-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .form-text-res {
+        margin-bottom: 1rem;
+    }
+
+
+    .modal-header {
+        border-bottom: 0px !important;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .modal-footer {
+        border-top: 0px !important;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .modal-body-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: #112B3C;
+    }
+
+    .modal-content {
+        border-radius: 20px;
+    }
+
+    .success-img {
+        width: 160px;
+        height: 150px;
+    }
+
+    .form-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: left;
+        text-transform: capitalize;
+        color: #ACB2B6;
+    }
+
+    .form-text-1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px !important;
+        line-height: 17px !important;
+        text-align: left;
+        text-transform: capitalize;
+        color: #ACB2B6;
+    }
+
+    .form-control {
+        border: 2px solid #E5E5E5;
+        border-radius: 104px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        height: 40px;
+        color: #ACB2B6;
+    }
+
+    .img-pass {
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+    }
+
+
+    .btn-primary {
+        background: #E89F71;
+        border-radius: 104px;
+        border-color: #E89F71;
+        height: 40px !important;
+        font-family: 'Inter';
+        font-size: 14px;
+    }
+
+    .btn-outline-dark {
+        border-radius: 104px;
+        height: 40px !important;
+        font-family: 'Inter';
+        font-size: 14px;
+    }
+}

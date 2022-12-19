@@ -1,0 +1,255 @@
+<div class="card">
+    <div class="d-flex h-100 responsive-card">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="card border h-100 text-white">
+                <div class="image-size">
+                    <img src="../../../assets/images/signin/left-banner.png" class="card-img border" width="100%" height="100%" alt="banner">
+                </div>
+                <div class="card-img-overlay">
+                    <div class="signin-alignment">
+                        <div class="">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="banner-logo">
+                                    <img src="../../../assets/images/signin/banner-logo.png" class="card-img-top" alt="banner-logo" width="auto" />
+                                </div>
+                            </div>
+                            <h3 class="header mt-4">“Berbagai kebutuhan <br /> interior rumah anda”</h3>
+                            <p class="paragraph">Sourcezee.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="container h-100 py-4">
+                <div class="signin-alignment responsive-card-1">
+                    <div class="col-lg-12">
+                        <div class="container-fluid">
+                            <div style="width: 100%; text-align: end;">
+                                <img (click)="goTo()" src="../../../assets/images/common/cross.png" width="24px" height="24px" />
+                            </div>
+                            <h3 class="title mb-4">Sign up for free</h3>
+                           <form *ngIf="!isSuccessful" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                            {{f.form.valid}}
+
+                                <div class="d-lg-flex justify-content-center align-items-baseline gap-4">
+                                    <div class="form-text form-text-res">Please select</div>
+                                    <div class="d-lg-flex justify-content-center align-items-baseline gap-3">
+                                        <div class="form-group">
+                                            <label class="radio-container form-text-1" style="color: #000;">Buy From Sourcezee
+                                                <input class="radio-input" type="radio" checked="checked" name="user_type" id="buyer" value="Buyer" [(ngModel)]="form.user_type" required #user_type="ngModel">
+                                                <span class="custom-control-label checkmark-1" for="buyer"></span>
+                                            </label>
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="radio-container form-text-1" style="color: #000;">Sell On Sourcezee
+                                                <input class="radio-input" type="radio" checked="unchecked" name="user_type" id="seller" value="Seller" [(ngModel)]="form.user_type" #user_type="ngModel">
+                                                <span class="custom-control-label checkmark-1" for="seller"></span>
+                                                
+                                            </label>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-md-3">
+                                    <div class="col-lg-6">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Company  Name" type="text" class="form-control" id="" name="company_name" [(ngModel)]="form.company_name" #company_name="ngModel" aria-describedby="" autocomplete="off"/>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="First Name*" type="text" class="form-control" name="first_name" [(ngModel)]="form.first_name" required #first_name="ngModel" id="" aria-describedby="" autocomplete="off"/>
+                                            <div class="alert-danger" *ngIf="first_name.errors && f.submitted">
+                                                <div *ngIf="first_name.errors['required']">First Name is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Last Name*" type="text" class="form-control" name="last_name" [(ngModel)]="form.last_name" required #last_name="ngModel" id="" aria-describedby="" autocomplete="off"/>
+                                            <div class="alert-danger" *ngIf="last_name.errors && f.submitted">
+                                                <div *ngIf="last_name.errors['required']">Last Name is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Phone*" type="text" class="form-control" name="mobile" [(ngModel)]="form.mobile" required #mobile="ngModel" id="" aria-describedby="" autocomplete="off" />
+                                            <div class="alert-danger" *ngIf="mobile.errors && f.submitted">
+                                                <div *ngIf="mobile.errors['required']">Phone is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Fax" type="text" class="form-control" name="fax" [(ngModel)]="form.fax" required #fax="ngModel" id="" aria-describedby="" autocomplete="off" />
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Address1" type="text" class="form-control" name="address" [(ngModel)]="form.address" required #address="ngModel" id="" aria-describedby="" autocomplete="off" />
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Address2" type="text" class="form-control" name="address2" [(ngModel)]="form.address2" required #address2="ngModel" id="" aria-describedby="" autocomplete="off" />
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Country*" type="text" class="form-control" name="country" [(ngModel)]="form.country" required #country="ngModel" id="" aria-describedby="" autocomplete="off" />
+                                            <div class="alert-danger" *ngIf="country.errors && f.submitted">
+                                                <div *ngIf="country.errors['required']">Country is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="City*" type="text" class="form-control" name="city" [(ngModel)]="form.city" required #city="ngModel" id="" aria-describedby="" autocomplete="off" />
+                                            <div class="alert-danger" *ngIf="city.errors && f.submitted">
+                                                <div *ngIf="city.errors['required']">City is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="State*" type="text" class="form-control" name="state" [(ngModel)]="form.state" required #state="ngModel" id="" aria-describedby="" autocomplete="off" />
+                                            <div class="alert-danger" *ngIf="state.errors && f.submitted">
+                                                <div *ngIf="state.errors['required']">State is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Zip*" type="text" class="form-control" name="zip" [(ngModel)]="form.zip" required #zip="ngModel" id="" aria-describedby="" autocomplete="off" />
+                                            <div class="alert-danger" *ngIf="zip.errors && f.submitted">
+                                                <div *ngIf="zip.errors['required']">Zip is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Tax ID / EIN*" type="text" class="form-control" name="tax_id" [(ngModel)]="form.tax_id" required #tax_id="ngModel" id="" aria-describedby="" autocomplete="off" />
+                                            <div class="alert-danger" *ngIf="tax_id.errors && f.submitted">
+                                                <div *ngIf="tax_id.errors['required']">Tax Id is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Website" type="text" class="form-control" name="website" [(ngModel)]="form.website" required #website="ngModel" id="" aria-describedby="" autocomplete="off" />
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Email*" type="email" class="form-control" name="email" [(ngModel)]="form.email" required #email="ngModel" id="" aria-describedby="" autocomplete="off" />
+                                            <div class="alert-danger" *ngIf="email.errors && f.submitted">
+                                                <div *ngIf="email.errors['required']">Email is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3 form-group">
+                                            <input placeholder="Confirm Email*" type="email" class="form-control" name="confirm_email" [(ngModel)]="form.confirm_email" required #confirm_email="ngModel" id="" aria-describedby="" autocomplete="off" />
+                                            <div class="alert-danger" *ngIf="confirm_email.errors && f.submitted">
+                                                <div *ngIf="confirm_email.errors['required']">Confirm Email is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3 password-field form-group">
+                                            <div class="img-pass" (click)="showPassword()">
+                                                <img  *ngIf="!show_eye" class="eyes-hide"  src="../../../assets/images/signin/hide-eyes-icon.png"  />
+                                                <img *ngIf="show_eye" class="eyes-hide"  src="../../../assets/images/signin/password-vector.png" alt="">
+                                            </div>
+                                            <input placeholder="Password*" [type]="show_button ? 'text' : 'password'" class="form-control" name="password" [(ngModel)]="form.password"  minlength="6" required #password="ngModel" id="exampleInputPassword1" autocomplete="off"/>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3 password-field form-group">
+                                            <div class="img-pass" (click)="confirmPassword()">
+                                                <img  *ngIf="!showconfirm_eye" class="eyes-hide"  src="../../../assets/images/signin/hide-eyes-icon.png"  />
+                                                <img *ngIf="showconfirm_eye" class="eyes-hide"  src="../../../assets/images/signin/password-vector.png" alt="">
+                                            </div>
+                                            <input placeholder="Confirm Password*" [type]="conform_button ? 'text' : 'password'" class="form-control" name="confirm_password" [(ngModel)]="form.confirm_password"  minlength="6" required #confirm_password="ngModel" id="exampleInputPassword1" autocomplete="off" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="mendotry">All * fields are mendatory</label>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="position-relative h-100">
+                                        <label class="container-1 form-text-1">
+                                            <span style="color: #000;">Standard</span> T&C * <span style="color: #000;">apply, please check the box to proceed.</span>
+                                            <input class="inputs" type="checkbox" checked="checked" name="t_n_c" [(ngModel)]="form.t_n_c" required #t_n_c="ngModel" >
+                                            <div class="alert-danger" *ngIf="t_n_c.errors && f.submitted">
+                                                <div *ngIf="t_n_c.errors['required']">T&C is required</div>
+                                            </div>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-outline-dark w-100 mt-3">CLEAR</button>
+                                    </div>
+                                    <div class="col-lg-6">
+                                     <!-- <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary w-100 mt-3">CREATE ACCOUNT</button> -->
+                                     <button type="submit" class="btn btn-primary w-100 mt-3">CREATE ACCOUNT</button>
+                                    </div>
+                                    <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed"> Signup failed! {{ errorMessage }}
+                                    </div>
+                                    
+                                    <!-- <div class="success alert-success" *ngIf="isSuccessful"> Signup successfully done! {{returnMessage}}
+                                    </div> -->
+                                    <div class="form-text mt-3">Already have an account? <a href="signin.html" routerLink="/login" class="link">Sign In here</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<!-- Modal -->
+<div class="modal" id="exampleModal" [ngStyle]="{'display' : (isSuccessful ? 'block' : 'none')}" style="background: #00000085;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-lg-4">
+            <div class="modal-header">
+                <div class="modal-header">
+                    <div class="success-img">
+                        <img src="../../../assets/images/common/successfully.png" width="
+                    100%" height="100%" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-body-title">
+                    Signup successfully done!
+                </h3>
+                <p class="form-text-1" style="color: #000000; text-align: center;">
+                    we need 24 hours to review your profile. We will get back to you in next 24 hours.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" style="width: 113px; height: 48px;" data-bs-dismiss="modal" (click)="redirectToLogin()">ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
