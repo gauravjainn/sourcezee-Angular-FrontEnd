@@ -1031,3 +1031,15 @@ img.eyes-hide1 {
         color: #FFFFFF;
     }
 }
+
+.common_btn{
+    min-width: 125px;
+    width: 100%;
+    transition: unset;
+}
+.common_login_btn_hover:hover {
+    color: #000;
+}
+.common_login_btn_hover:hover img{
+    filter: invert(1) brightness(0);
+}
