@@ -25,11 +25,11 @@ export class AuthService {
     }, httpOptions);
   }
  
-  register(user_type: string, company_name: string, first_name: string, last_name: string, mobile: string,  fax: string, address: string, country: string, city: string, state: string, zip: string, tax_id: string, email: string, password: string): Observable<any> {
+  register(user_type: string, company_name: string, first_name: string, last_name: string, mobile: string,  fax: string, address: string, country: string, city: string, state: string, zip: string, tax_id: string, email: string, password: string, website: string): Observable<any> {
   
    console.log("Inside auth service register");
    
-   console.log(this.http.post(AUTH_API + 'register', {user_type,company_name,first_name,last_name,mobile,fax,address,country,city,state,zip,tax_id,email,password}, httpOptions));
+   console.log(this.http.post(AUTH_API + 'register', {user_type,company_name,first_name,last_name,mobile,fax,address,country,city,state,zip,tax_id,email,password, website}, httpOptions));
   
     return this.http.post(AUTH_API + 'register', {
   
@@ -46,7 +46,8 @@ export class AuthService {
 		zip,
 		tax_id,
 		email,
-		password
+		password,
+    website
 	  
     }, httpOptions);
   }
