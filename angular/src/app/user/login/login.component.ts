@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
           var localdata = window.btoa(JSON.stringify(resp.data));
           localStorage.setItem("userdata", localdata);
 
-          var token = resp.data.token;
+          var token = resp.data.auth_token;
           localStorage.setItem("token", token);
 
           this.isLoginFailed = false;

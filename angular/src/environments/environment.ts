@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BaseUrl: "https://test.sourcezee.com:5004/api"
+  BaseUrl: "https://dev.sourcezee.com:5004/api/"
 };
 
 /*
