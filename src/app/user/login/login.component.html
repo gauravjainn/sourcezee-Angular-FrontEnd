@@ -39,7 +39,7 @@
 								    <form *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
                                     <div class="mb-3 login-inputs">
                                         <input id="email" name="email" placeholder="Email Address*" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="form.email" required #email="ngModel" autocomplete="off" />
-										<div class="alert alert-danger" role="alert" *ngIf="email.errors && f.submitted" > Email is required! </div>
+										<div class="alert alert-danger" role="alert" *ngIf="email.errors && f.submitted" > Email is required </div>
 
                                     </div>
                                     <div class="mb-3 password-field login-inputs">
