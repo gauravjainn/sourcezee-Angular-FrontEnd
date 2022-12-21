@@ -66,7 +66,7 @@
                                     <div class="col-lg-3">
                                         <div class="mb-3 form-group">
                                             <input placeholder="First Name*" type="text" class="form-control" name="first_name" [(ngModel)]="form.first_name" required #first_name="ngModel" id="" aria-describedby="" autocomplete="off"/>
-                                    
+
                                             <!-- <span *ngIf="first_name.invalid && (first_name.touched || first_name.dirty)"></span> -->
 
                                             <div class="alert-danger" *ngIf="first_name.errors && f.submitted">
@@ -238,12 +238,11 @@
                                     <div class="col-lg-6">
                                         <button type="button" (click)="clearForm()" class="btn btn-outline-dark w-100 mt-3 common_clear_hover_btn">CLEAR</button>
                                     </div>
-                                    
-                                    <div class="col-lg-6">
-                                        
-                                     <!-- <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary w-100 mt-3">CREATE ACCOUNT</button> -->
 
-                                        <button type="submit" class="btn btn-primary w-100 mt-3 common_hover_btn" >CREATE ACCOUNT</button>
+                                    <div class="col-lg-6">
+
+                                     <!-- <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary w-100 mt-3">CREATE ACCOUNT</button> -->
+                                     <button type="submit" class="btn btn-primary w-100 mt-3 common_hover_btn">CREATE ACCOUNT</button>
                                     </div>
 
                                     <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed"> Signup failed! {{ errorMessage }}
