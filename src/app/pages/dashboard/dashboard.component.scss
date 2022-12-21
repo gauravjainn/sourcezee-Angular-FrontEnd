@@ -343,7 +343,11 @@ body {
 
 .form-select:focus {
     box-shadow: none !important;
-    border-color: #FDF6F1 !important;
+    border-color: unset;
+}
+
+.form-control:focus{
+    box-shadow: unset;
 }
 
 .form-search-control {
@@ -354,7 +358,7 @@ body {
     font-size: 16px;
     line-height: 150%;
     text-align: left;
-    color: #ACB2B6;
+    color: #000;
     width: 100%;
 }
 
@@ -1088,6 +1092,7 @@ body {
         color: #FFFFFF;
     }
 }
+
 @media screen and (max-width:450px) {
     .sub_category {
         grid-template-columns: repeat(1, 1fr);
