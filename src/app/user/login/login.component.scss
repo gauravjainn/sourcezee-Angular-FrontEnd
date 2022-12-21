@@ -222,13 +222,15 @@ body {
 }
 
 .alert-danger {
+    padding-top: 5px;
+    padding-bottom: 5px;
     //color: #ff0017 !important;
     background-color: #fff !important;
     border-color: #fff !important;
     font-size: 15px !important;
     color: #ff6f7c !important;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 
 /* #email {

@@ -8,7 +8,7 @@
             aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-between w-100" id="navbarSupportedContent">
             <div class="d-xs-none d-sm-none d-md-none d-lg-block">
                 <a class="navbar-brand" routerLink="/"><img src="../../../assets/images/homepage/brand.png" /></a>
             </div>
@@ -135,7 +135,7 @@
                             Furniture, Home Textile and Fashion. Our solutions facilitate smart, transparent, and
                             sustainable approach to do business.
                         </p>
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary common_btn common_login_btn_hover">
                             <span class="btn-span">About Us</span></button>
                     </div>
                 </div>
@@ -217,7 +217,7 @@
                     <p class="sup-paragraph">in- house design <br /> & sampling</p>
                 </div>
                 <div class="col-lg-12">
-                    <div class="d-flex justify-content-center my-4">
+                    <div class="d-flex justify-content-center my-4 register_btn">
                         <button class="btn btn-primary btn-reg" routerLink="/manufactur">
                             Register as a Supplier</button>
                     </div>
@@ -243,7 +243,7 @@
                             people who are professionals in their fields with an elegant and lucurious style and
                             with premium quality materials
                         </p>
-                        <button class="btn btn-outline-primary">
+                        <button class="btn btn-outline-primary common_btn common_login_btn_hover">
                             More Info</button>
                     </div>
                 </div>
@@ -265,7 +265,7 @@
                             Because panto was very serious about designing furniture for our environment, using a
                             very expensive and famous capital but at a relatively low price
                         </p>
-                        <button class="btn btn-outline-primary">
+                        <button class="btn btn-outline-primary common_btn common_login_btn_hover">
                             More Info</button>
                     </div>
                 </div>
@@ -350,11 +350,11 @@
 
 
 
-    <div id="div-faq" style="background-color: #FCF8F3; padding-top: 2rem; padding-bottom: 2rem;">
+    <div id="div-faq">
         <div class="container-fluid">
             <h6 class="exp-sub-title-1 text-center">Frequently Asked Questions</h6>
             <h2 class="tab-heading text-center p-3 mt-0">FAQ</h2>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion accordion-flush common_accordion" id="accordionFlushExample">
                 <div class="row g-2">
                     <div class="col-lg-6" *ngFor="let faq of faqData; let i=index;">
                         <div class="accordion-item accordion-item-1">

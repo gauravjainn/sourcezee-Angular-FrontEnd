@@ -103,6 +103,10 @@ body {
     border-radius: 24px;
 }
 
+.register_btn .btn-primary{
+    padding: 10px 32px;
+}
+
 .btn-primary:hover {
     background: #E89F71;
     border-radius: 104px;
@@ -590,6 +594,7 @@ body {
     border-radius: 15px;
     padding: 27px 0;
 }
+
 .display-catagory {
     display: flex;
     flex-flow: column;
@@ -695,7 +700,8 @@ body {
     font-size: 16px;
     margin-bottom: 20px;
 }
-.effect-btn1{
+
+.effect-btn1 {
     position: absolute;
     bottom: 12%;
     left: 50%;
@@ -707,9 +713,11 @@ body {
     border-radius: 0 10px 10px 0;
     box-shadow: none;
 }
-.effect-4:hover .effect-btn1{
+
+.effect-4:hover .effect-btn1 {
     opacity: 1;
 }
+
 .effect-4 .effect-btn .btn {
     // display: inline-block;
     // height: 35px;
@@ -738,6 +746,7 @@ span.Subcategory {
     line-height: 120%;
     color: #3A3A3A;
 }
+
 span.category {
     font-family: 'Inter';
     font-style: normal;
@@ -746,10 +755,12 @@ span.category {
     line-height: 150%;
     color: #616161;
 }
+
 img.eyes-hide1 {
     width: 40%;
 }
-.offcanvas-body{
+
+.offcanvas-body {
     display: none;
 }
 
@@ -1034,14 +1045,34 @@ img.eyes-hide1 {
     }
 }
 
-.common_btn{
+.common_btn {
     min-width: 125px;
+    max-width: 125px;
     width: 100%;
     transition: unset;
 }
+
 .common_login_btn_hover:hover {
     color: #000;
 }
-.common_login_btn_hover:hover img{
+
+.common_login_btn_hover:hover img {
     filter: invert(1) brightness(0);
+}
+
+.common_accordion .accordion-button {
+    padding: 25px 20px;
+}
+
+
+#div-faq {
+    background-color: #FCF8F3;
+    padding: 60px 0;
+    margin: 60px 0 0;
+}
+
+@media screen and (max-width: 991px){
+    .about-row > div:nth-child(2){
+        margin-top: 40px;
+    }
 }

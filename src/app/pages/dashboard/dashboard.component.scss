@@ -276,7 +276,7 @@ body {
 }
 
 .top-search-bar {
-   flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
 }
 
 .sup-title {
@@ -766,23 +766,49 @@ body {
 }
 
 .select-prod-drop {
-	width: 25% !important;
+    width: 25% !important;
 }
+
 .sub_category {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
 }
+
 .d-flex {
-    display: flex!important;
+    display: flex !important;
     justify-content: space-between;
     color: #E89F71;
 }
+
 .view {
     color: #E89F71;
 }
-@media screen and (max-width:768px) {
 
+
+.right_coloum_img{
+    display: flex;
+    flex-direction: column;
+}
+.right_coloum_img img + img{
+    margin-top: 20px;
+}
+.right_coloum_img img{
+    flex: 1;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+    border: 1px solid #F2994A;
+    border-radius: 12px;
+    object-fit: cover;
+}
+@media screen and (max-width:991px) {
+    .sub_category {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width:768px) {
+    .sub_category {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .home-title {
         font-family: 'Merriweather';
         font-style: normal;
@@ -1060,5 +1086,10 @@ body {
         padding-top: 1rem;
         padding-bottom: 0rem;
         color: #FFFFFF;
+    }
+}
+@media screen and (max-width:450px) {
+    .sub_category {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
