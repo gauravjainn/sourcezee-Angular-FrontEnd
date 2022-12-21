@@ -749,6 +749,9 @@ span.category {
 img.eyes-hide1 {
     width: 40%;
 }
+.offcanvas-body{
+    display: none;
+}
 
 @media (max-width: 330px) {
     .img-col img:hover {
@@ -759,7 +762,6 @@ img.eyes-hide1 {
 // -------------------------------------- //
 
 @media screen and (max-width:768px) {
-
     .header {
         font-family: 'Merriweather';
         font-style: normal;
