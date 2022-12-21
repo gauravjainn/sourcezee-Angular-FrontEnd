@@ -51,9 +51,6 @@ export class RegisterComponent implements OnInit {
 
 	constructor(private authService: AuthService, private formBuilder: FormBuilder, private _router: Router) { }
 
-	emailsMatchValidator(form: FormGroup) {
-      return 
-    }
 
 	ngOnInit(): void {
 		this.form = this.formBuilder.group(
@@ -86,7 +83,6 @@ export class RegisterComponent implements OnInit {
 					[
 						Validators.required, 
 						Validators.email,
-						Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')
 					]
 				],
 				password: [
@@ -101,7 +97,7 @@ export class RegisterComponent implements OnInit {
 				acceptTerms: [false, Validators.requiredTrue]
 			},
 			{
-				// validators: [Validation.match('password', 'confirmPassword')]
+				validators: [Validation.match('password', 'confirmPassword') , Validation.match('email' , 'confirm_email')],
 			}
 		);
 	}
@@ -201,5 +197,8 @@ export class RegisterComponent implements OnInit {
 	confirmPassword() {
 		this.conform_button = !this.conform_button;
 		this.showconfirm_eye = !this.showconfirm_eye;
+	}
+	confirmEmail() {
+		this.conform_button = !this.conform_button;
 	}
 }
