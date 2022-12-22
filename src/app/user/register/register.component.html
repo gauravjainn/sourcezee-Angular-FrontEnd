@@ -34,8 +34,7 @@
                             <h3 class="title mb-4">Sign up for free</h3>
 
                             <form *ngIf="!isSuccessful" [formGroup]="formgroup" #form="ngForm"
-                                (ngSubmit)="form.form.valid && onSubmit()">
-
+                                (ngSubmit)="onSubmit()">
                                 <div class="d-lg-flex justify-content-center align-items-baseline gap-4">
                                     <div class="form-text form-text-res">Please select</div>
                                     <div class="d-lg-flex justify-content-center align-items-baseline gap-3">
@@ -66,7 +65,7 @@
                                     <div class="col-lg-6">
                                         <div class="mb-3 form-group">
                                             <input placeholder="Company Name" type="text" class="form-control" id=""
-                                                name="company_name" formControlName="company_name" required
+                                                name="company_name" formControlName="company_name" 
                                                 aria-describedby="" autocomplete="off" />
 
                                             <div *ngIf="f['company_name'].invalid && (f['company_name'].dirty || f['company_name'].touched)"
@@ -125,7 +124,7 @@
                                     <div class="col-lg-6">
                                         <div class="mb-3 form-group">
                                             <input placeholder="Fax" type="text" class="form-control" name="fax"
-                                                formControlName="fax" required id="" aria-describedby=""
+                                                formControlName="fax"  id="" aria-describedby=""
                                                 autocomplete="off" />
 
                                             <div *ngIf="f['fax'].invalid && (f['fax'].dirty || f['fax'].touched)"
@@ -139,7 +138,7 @@
                                     <div class="col-lg-12">
                                         <div class="mb-3 form-group">
                                             <input placeholder="Address1" type="text" class="form-control"
-                                                name="address" formControlName="address" required id=""
+                                                name="address" formControlName="address"  id=""
                                                 aria-describedby="" autocomplete="off" />
 
                                             <div *ngIf="f['address'].invalid && (f['address'].dirty || f['address'].touched)"
@@ -153,7 +152,7 @@
                                     <div class="col-lg-12">
                                         <div class="mb-3 form-group">
                                             <input placeholder="Address2" type="text" class="form-control"
-                                                name="address2" formControlName="address2" required id=""
+                                                name="address2" formControlName="address2"  id=""
                                                 aria-describedby="" autocomplete="off" />
 
                                             <div *ngIf="f['address2'].invalid && (f['address2'].dirty || f['address2'].touched)"
@@ -237,7 +236,7 @@
                                     <div class="col-lg-6">
                                         <div class="mb-3 form-group">
                                             <input placeholder="Website" type="text" class="form-control" name="website"
-                                                formControlName="website" required id="" aria-describedby=""
+                                                formControlName="website"  id="" aria-describedby=""
                                                 autocomplete="off" />
 
                                             <div *ngIf="f['website'].invalid && (f['website'].dirty || f['website'].touched)"
@@ -344,6 +343,7 @@
                                 <div>
                                     <label class="mendotry">All * fields are mendatory</label>
                                 </div>
+                               
                                 <div class="d-flex justify-content-between align-items-baseline">
                                     <div class="position-relative h-100">
                                         <label class="container-1 form-text-1">
@@ -358,10 +358,14 @@
                                                     T&C is required
                                                 </div>
                                             </div>
+                                            
 
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
+                                </div>
+                                <div class="alert alert-danger" *ngIf="isSignUpFailed"> Signup
+                                    failed! {{ errorMessage }}
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -376,9 +380,7 @@
                                         <button type="submit" class="btn btn-primary w-100 mt-3 common_hover_btn" >CREATE ACCOUNT</button>
                                     </div>
 
-                                    <div class="alert alert-warning" *ngIf="isSignUpFailed"> Signup
-                                        failed! {{ errorMessage }}
-                                    </div>
+                                    
 
                                     <!-- <div class="success alert-success" *ngIf="isSuccessful"> Signup successfully done! {{returnMessage}}
                                     </div> -->

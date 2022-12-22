@@ -59,19 +59,19 @@ export class RegisterComponent implements OnInit {
 			{
 
 				user_type: ['Buyer', [Validators.required]],
-				company_name: ['', [Validators.required]],
+				company_name: [''],
 				first_name: ['', [Validators.required]],
 				last_name: ['', [Validators.required]],
 				mobile: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
-				fax: ['', [Validators.required]],
-				address: ['', [Validators.required]],
-				address2: ['', [Validators.required]],
+				fax: [''],
+				address: [''],
+				address2: [''],
 				country: ['', [Validators.required]],
 				city: ['', [Validators.required]],
 				state: ['', [Validators.required]],
 				zip: ['', [Validators.required]],
 				tax_id: ['', [Validators.required]],
-				website: ['', [Validators.required]],
+				website: [''],
 				email: ['', [Validators.required, Validators.email]],
 				confirm_email: ['', [Validators.required, Validators.email]],
 				password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(40)]],
@@ -102,6 +102,13 @@ export class RegisterComponent implements OnInit {
 
 	onSubmit(): void {
 		console.log("Inside");
+
+		if (this.formgroup.invalid) {
+			this.errorMessage = "Please fill in all required fields!";
+			this.isSignUpFailed = true;
+			return;
+		}
+
 		const { user_type, company_name, first_name, last_name, mobile, fax, address, country, city, state, zip, tax_id, email, password, website } = this.formgroup.value;
 
 		this.authService.register(user_type, company_name, first_name, last_name, mobile, fax, address, country, city, state, zip, tax_id, email, password, website).subscribe({
@@ -129,8 +136,8 @@ export class RegisterComponent implements OnInit {
 			},
 			error: err => {
 				console.log(err);
-				//this.errorMessage = err.error.message;
-				this.errorMessage = "Please fill in all required fields!";
+				this.errorMessage = err.error.message;
+				// this.errorMessage = "Please fill in all required fields!";
 				this.isSignUpFailed = true;
 				console.log(this.isSuccessful);
 			}
