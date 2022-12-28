@@ -1,0 +1,274 @@
+<!-- Navbar start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-4" style="box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1)">
+    <div class="container-fluid">
+        <div class="d-xs-block d-sm-block d-md-block d-lg-none">
+            <a class="navbar-brand" routerLink="/"><img src="assets/images/homepage/brand.png" /></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container-fluid justify-content-between" id="navbarSupportedContent">
+            <div class="d-xs-none d-sm-none d-md-none d-lg-block">
+                <a class="navbar-brand" href="#"><img src="assets/images/homepage/brand.png" /></a>
+            </div>
+            <div>
+                <div class="input-group input-search-group mb-3 top-search-bar flex-nowrap">
+                    <span class="input-group-text border-none input-group-select select-prod-drop w-25" id="basic-addon2">
+                        <select class="form-select border-none" aria-label="Default select example">
+                            <option selected>Product</option>
+                            <option value="1">Seller</option>
+                        </select>
+                    </span>
+                    <input type="text" class="form-control border-none form-search-control"
+                        placeholder="Search for products and ideas search_product_input" aria-label="Search for products and ideas"
+                        aria-describedby="basic-addon2">
+                    <span class="input-group-text input-color border-none" id="basic-addon2">
+                        <img src="assets/images/home/search.png" alt="search" />
+                    </span>
+                </div>
+                <ul class="navbar-nav mt-md-4 mt-lg-0 mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link link-text" aria-current="page" >Home Decor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" >Furniture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text">Bedding & Bath</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" >Kitchen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" >Lifestyle & More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex gap-2">
+                <button class="btn btn-light">
+                    <img src="assets/images/home/heart.png" />
+                </button>
+                <button class="btn btn-light">
+                    <img src="assets/images/home/cart.png" />
+                </button>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sourcezee</h5>
+                <button type="button" class="btn-close btn-close-grey" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <!-- <div class="offcanvas-body">
+                <div class="d-xs-none d-sm-none d-md-none d-lg-block">
+                    <a class="navbar-brand" href="#"><img src="assets/images/homepage/brand.png" /></a>
+                </div>
+                <ul class="navbar-nav mt-md-4 mt-lg-0 mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link link-text" aria-current="page" >Home Decor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" >Furniture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" >Bedding & Bath</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text">Kitchen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-text" >Lifestyle & More</a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-primary">Sign up</button>
+                    <button class="btn btn-primary"><img src="assets/images/homepage/user.png" />
+                        <span class="btn-span">Login</span></button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+    <!-- Header Start -->
+    <div class="source-listing">
+        <div class="container-fluid container-97">
+            <div class="row align-self-start">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-5">
+                    <div class="pe-4">
+                        <div class="border-bottom pb-3" style="margin-top:13px;">
+                            <div class="fillter-data d-flex align-items-center justify-content-between">
+                                <h3 class="mb-0">FILTERS</h3>
+                                <button class="">Clear All</button>
+                            </div>
+                        </div>
+                        <div class="fillte-listing">
+                            <h6>Categories</h6>
+                            <ul class="ps-0 mb-0">
+                                <li><span>Home Decor</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>Furniture</span><input class="form-check-input" type="checkbox"></li>
+                            </ul>
+                        </div>
+                        <div class="fillte-listing">
+                            <h6>Sub categories</h6>
+                            <ul class="ps-0 mb-0">
+                                <li><span>Accent Table</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>Clocks</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>Mirrors</span><input class="form-check-input" type="checkbox"></li>
+                            </ul>
+                        </div>
+                        <div class="fillte-listing">
+                            <h6>Sizes</h6>
+                            <ul class="ps-0 mb-0">
+                                <li><span>Small</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>Medium</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>Large</span><input class="form-check-input" type="checkbox"></li>
+                            </ul>
+                        </div>
+                        <div class="fillte-listing">
+                            <h6>Materials</h6>
+                            <ul class="ps-0 mb-0">
+                                <li><span>Metal</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>Wood</span><input class="form-check-input" type="checkbox"></li>
+                            </ul>
+                        </div>
+                        <div class="fillte-listing">
+                            <h6>Price</h6>
+                            <ul class="ps-0 mb-0">
+                                <li><span>FOB</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>Ex factory</span><input class="form-check-input" type="checkbox"></li>
+                            </ul>
+                        </div>
+                        <div class="fillte-listing">
+                            <h6>MOQ</h6>
+                            <ul class="ps-0 mb-0">
+                                <li><span>Less than 10</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>10-30</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>30-50</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>>50</span><input class="form-check-input" type="checkbox"></li>
+                            </ul>
+                        </div>
+                        <div class="fillte-listing">
+                            <h6>Color</h6>
+                            <ul class="ps-0 mb-0">
+                                <li><span>Metalic Gray</span><input class="form-check-input" type="checkbox"></li>
+                                <li><span>Metalic wood</span><input class="form-check-input" type="checkbox"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-8 col-sm-7">
+                    <div class="listing-top">
+                        <div class="border-bottom pb-3 mb-4">
+                            <div class="sortby d-flex align-items-center">
+                                <label class="me-2">Sort by:</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Best Match</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="listing_heading mb-4">
+                            <h1>Home accents & decor</h1>
+                            <p>Wholesale home decor, lighting, ornaments, wall art, candlesticks and garden accessories
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div *ngFor="let product of products" class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                            <!-- product -->
+                            <div class="product-list">
+                                <div #slider class="slider prodcut-slide">
+                                    <div *ngFor="let image of product.images">
+                                        <div class="sli-img"><img [src]="image"></div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <a (click)="slickActive(slider, $event)" *ngFor="let image of product.images; let i = index" href="#" [attr.data-slide]="i"><img [src]="image"></a>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>{{product.name}}</h3>
+                                    <h6><span>{{product.currentPrice}}</span><span>{{product.oldPrice}}</span></h6>
+                                    <p>Explore more by this seller</p>
+                                    <div class="add-cart d-flex justify-content-between align-items-center">
+                                        <span>CBM Count <strong>{{product.count}}</strong></span>
+                                        <a href="#" class="#"><img src="assets/images/listing/pi-cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer start -->
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <ul class="ul-list">
+                        <li>
+                            <div class="footer-img">
+                                <img src="assets/images/homepage/footer-logo.png" class="card-img" width="100%"
+                                    height="100%" />
+                            </div>
+                        </li>
+                        <li class="footer-text">One stop shop for all
+                            your sourcing needs</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="ul-list">
+                        <li>
+                            <h5 class="footer-title">
+                                Information
+                            </h5>
+                        </li>
+                    </ul>
+                    <ul class="ul-list">
+                        <li class="footer-text">About us</li>
+                        <li class="footer-text">Blog</li>
+                        <li class="footer-text">Sitemap</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2">
+                    <ul class="ul-list">
+                        <li>
+                            <h5 class="footer-title">
+                                Policy
+                            </h5>
+                        </li>
+                    </ul>
+                    <ul class="ul-list">
+                        <li class="footer-text">Terms & conditions</li>
+                        <li class="footer-text">Privacy policy</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <ul class="ul-list">
+                        <li>
+                            <h5 class="footer-title">
+                                Contact Us
+                            </h5>
+                        </li>
+                    </ul>
+                    <ul class="ul-list">
+                        <li class="footer-text">For any queries, email us at
+                            contact@sourcezee.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <p class="footer-sub-text">© 2022 <span style="color: #E89F71;">Sourcezee</span>, All right
+                        reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
