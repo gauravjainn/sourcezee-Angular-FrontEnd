@@ -26,6 +26,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ManufacturComponent } from './pages/manufactur/manufactur.component'; 
 import { JWTHttpInterceptor } from './interceptors/httpinterceptor.interceptor';
 import { ListingComponent } from './pages/product/listing/listing.component';
+import { DetailsComponent } from './pages/product/details/details.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ListingComponent } from './pages/product/listing/listing.component';
     RegisterComponent,
     ServicesComponent,
     ManufacturComponent,
-    ListingComponent
+    ListingComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+app-details {
+    #more-product>.slick-list>.slick-track>.slick-slide {
+        margin: 0px 10px;
+    }
+    
+    #more-product .slick-arrow, .pr-detail .slick-arrow{
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        display: block;
+        cursor: pointer;
+        color: #e9a073;
+        border: none;
+        outline: none;
+        background: #ffffff;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border: 2px solid #e9a073;
+        border-radius: 40px;
+        z-index: 11;
+    }
+    
+    #more-product .slick-prev{
+        left: -10px;
+    }
+    #more-product .slick-arrow .fa-chevron-left{
+        position: relative;
+        left: -10px;
+        font-size: 13px;
+    }
+    #more-product .slick-arrow .fa-chevron-right {
+        position: relative;
+        right: 10px;
+        font-size: 13px;
+    }
+    #more-product .slick-next {
+        right: -10px;
+    }
+    .pr-detail .slick-arrow{
+        width: 30px;
+        height: 30px;
+    }
+    .pr-detail .slick-prev{
+        left: 10px;
+    }
+    .pr-detail .slick-arrow .fa-chevron-left {
+        position: relative;
+        left: -10px;
+        font-size: 13px;
+    
+    }
+    .pr-detail .slick-arrow .fa-chevron-right {
+        position: relative;
+        right: 10px;
+        font-size: 13px;
+    
+    }
+    .pr-detail .slick-next {
+        right: 10px;
+    }
+}

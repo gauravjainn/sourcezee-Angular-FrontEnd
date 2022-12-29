@@ -1,14 +1,11 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
-declare var $: any;
-
+declare var $: any
 @Component({
-  selector: 'app-listing',
-  templateUrl: './listing.component.html',
-  styleUrls: ['./listing.component.scss']
+  selector: 'app-details',
+  templateUrl: './details.component.html',
+  styleUrls: ['./details.component.scss']
 })
-export class ListingComponent implements OnInit, AfterViewInit {
-  filter!:FormGroup;
+export class DetailsComponent implements OnInit, AfterViewInit {
   products = [
     {
       name: "Abstract Fish Aluminium Tealights (Set of 2)",
@@ -110,104 +107,66 @@ export class ListingComponent implements OnInit, AfterViewInit {
       ]
     },
   ];
-  filters = {
-    categories: [
-      {
-        name: 'Home Decor',
-        value: false
-      },
-      {
-        name: 'Furniture',
-        value: false
-      },
-    ],
-    "Sub categories": [
-      {
-        name: 'Accent Table',
-        value: false
-      },
-      {
-        name: 'Clocks',
-        value: false
-      },
-      {
-        name: 'Mirrors',
-        value: false
-      },
-    ],
-    Sizes: [
-      {
-        name: 'Small',
-        value: false
-      },
-      {
-        name: 'Medium',
-        value: false
-      },
-      {
-        name: 'Large',
-        value: false
-      },
-    ],
-    Materials: [
-      {
-        name: 'Metal',
-        value: false
-      },
-      {
-        name: 'Wood',
-        value: false
-      },
-    ],
-    Price: [
-      {
-        name: 'FOB',
-        value: false
-      },
-      {
-        name: 'Ex factory',
-        value: false
-      },
-    ],
-    MOQ: [
-      {
-        name: 'Less than 10',
-        value: false
-      },
-      {
-        name: '10-30',
-        value: false
-      },
-      {
-        name: '30-50',
-        value: false
-      },
-      {
-        name: '>50',
-        value: false
-      },
-    ],
-    Color: [
-      {
-        name: 'Metalic Gray',
-        value: false
-      },
-      {
-        name: 'Metalic wood',
-        value: false
-      },
-    ]
-  };
-  constructor(private formBuilder: FormBuilder) { }
+
+  constructor() { }
   ngAfterViewInit(): void {
-    $('.prodcut-slide').slick({
+    $('.more-product').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      centerMode: false,
+      prevArrow: ' <div class="slick-arrow slick-prev"><i class="fa fa-chevron-left"></i></div>',
+      nextArrow: '<div class="slick-arrow slick-next"> <i class="fa fa-chevron-right"></i></div>',
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false
+          }
+        }
+      ]
+    });
+    $('.pr-more').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       dots: false,
       fade: true,
     });
-    $('.prodcut-slide').on('swipe', function (event: MouseEvent, slick: any, direction: string) {
+    $('.pr-more').on('swipe', function (event: MouseEvent, slick: any, direction: string) {
       console.log(direction);
       const actionItems = $(event.currentTarget).siblings('.action').children()
       $(actionItems).removeClass('active');
@@ -216,20 +175,18 @@ export class ListingComponent implements OnInit, AfterViewInit {
         actionItemsArr[slick.currentSlide].classList.add('active');
       }
     });
+    $('.pr-detail').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      fade: true,
+      prevArrow: ' <div class="slick-arrow slick-prev"><i class="fa fa-chevron-left"></i></div>',
+      nextArrow: '<div class="slick-arrow slick-next"> <i class="fa fa-chevron-right"></i></div>'
+    });
   }
 
   ngOnInit(): void {
-    this.filter = this.formBuilder.group({});
-    for (const filter in this.filters) {
-      this.filter.addControl(filter, new FormArray([]));
-      const formArray = this.filter.get(filter) as FormArray;
-      for (const f of (this.filters[filter as keyof typeof this.filters])) {
-        formArray.push(this.formBuilder.group({
-          [f.name]:f.value
-        }))
-      }
-    }
-    console.log(this.filter)
   }
 
   slickActive(slider: any, e: MouseEvent) {
@@ -238,17 +195,5 @@ export class ListingComponent implements OnInit, AfterViewInit {
     $(slider).slick('slickGoTo', slideno);
     $('a[data-slide]').removeClass('active');
     (e.currentTarget as HTMLElement)?.classList.add('active');
-  }
-  get categoryControls() {
-    return Object.keys(this.filter.controls);
-  }
-  getFormArray(key: string) {
-    return ((this.filter.get(key) as FormArray).controls as Array<FormGroup>);
-  }
-  getElement(item: FormGroup) {
-    return Object.keys(item.controls)
-  }
-  clearAllFilter() {
-    this.filter.reset();
   }
 }

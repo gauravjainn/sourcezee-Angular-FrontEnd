@@ -100,17 +100,26 @@
                         <div class="border-bottom pb-3" style="margin-top:13px;">
                             <div class="fillter-data d-flex align-items-center justify-content-between">
                                 <h3 class="mb-0">FILTERS</h3>
-                                <button class="">Clear All</button>
+                                <button (click)="clearAllFilter()" class="">Clear All</button>
                             </div>
                         </div>
-                        <div class="fillte-listing">
-                            <h6>Categories</h6>
-                            <ul class="ps-0 mb-0">
-                                <li><span>Home Decor</span><input class="form-check-input" type="checkbox"></li>
-                                <li><span>Furniture</span><input class="form-check-input" type="checkbox"></li>
-                            </ul>
-                        </div>
-                        <div class="fillte-listing">
+                        <form [formGroup]="filter">
+                            <div *ngFor="let control of categoryControls" class="fillte-listing">
+                                <h6>{{control}}</h6>
+                                <ul class="ps-0 mb-0">
+                                    <li [formArrayName]="control" *ngFor="let item of getFormArray(control)">
+                                        <div class="w-100" [formGroup]="item">
+                                            <div class="checkbox-container" *ngFor="let item of getElement(item)">
+                                                <span>{{item}}</span>
+                                                <input [formControlName]="item" class="form-check-input" type="checkbox">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- <li><span>Furniture</span><input class="form-check-input" type="checkbox"></li> -->
+                                </ul>
+                            </div>
+                        </form>
+                        <!--  <div class="fillte-listing">
                             <h6>Sub categories</h6>
                             <ul class="ps-0 mb-0">
                                 <li><span>Accent Table</span><input class="form-check-input" type="checkbox"></li>
@@ -118,6 +127,7 @@
                                 <li><span>Mirrors</span><input class="form-check-input" type="checkbox"></li>
                             </ul>
                         </div>
+                        
                         <div class="fillte-listing">
                             <h6>Sizes</h6>
                             <ul class="ps-0 mb-0">
@@ -155,7 +165,7 @@
                                 <li><span>Metalic Gray</span><input class="form-check-input" type="checkbox"></li>
                                 <li><span>Metalic wood</span><input class="form-check-input" type="checkbox"></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-xl-9 col-lg-8 col-md-8 col-sm-7">
@@ -178,7 +188,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div *ngFor="let product of products" class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                        <div routerLink="/product/details" *ngFor="let product of products" class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
                             <!-- product -->
                             <div class="product-list">
                                 <div #slider class="slider prodcut-slide">

@@ -17,6 +17,8 @@ import { RegisterComponent } from './user/register/register.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ManufacturComponent } from './pages/manufactur/manufactur.component';
 import { AuthGuard } from './gaurds/auth.guard';
+import { ListingComponent } from './pages/product/listing/listing.component';
+import { DetailsComponent } from './pages/product/details/details.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -31,6 +33,8 @@ const routes: Routes = [
   { path: "register", component: RegisterComponent },
   { path: "services", component: ServicesComponent },
   { path: "manufactur", component: ManufacturComponent },
+  { path: "product/listing", component: ListingComponent },
+  { path: "product/details", component: DetailsComponent },
 ];
 
 @NgModule({
